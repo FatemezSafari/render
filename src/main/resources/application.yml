@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db.dmpgsxwcqggfxtnuhkie.supabase.co:5432/postgres
+    username: postgres
+    password: feiHgi#96bT
+    hikari:
+      ssl-mode: require
+      ssl-factory: org.postgresql.ssl.DefaultSSLFactory
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
