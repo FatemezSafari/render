@@ -6,13 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @GetMapping("/test")
-    public String test() {
-        return "✅ Backend is working perfectly with Supabase!";
-    }
-
-    @GetMapping("/health")
-    public String healthCheck() {
-        return "🚀 Server is up and running!";
+    @GetMapping("/")
+    public String home() {
+        return "Spring Boot is running!";
     }
 }
