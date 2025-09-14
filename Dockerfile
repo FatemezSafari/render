@@ -4,4 +4,4 @@ COPY . .
 RUN chmod +x mvnw
 RUN ./mvnw clean install -DskipTests
 EXPOSE 8080
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/Aura-0.0.1-SNAPSHOT.jar"]
