@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: my-cosmetic-store-backend
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://db.dmpgsxwcqggfxtnuhkie.supabase.co:5432/postgres
+      - key: SPRING_DATASOURCE_USERNAME
+        value: postgres
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: 1VFN0Cjw1kr3cy1S
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
